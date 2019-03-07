@@ -31,6 +31,7 @@
                             <td>{{$curso->estudiantes->count()}}</td>
                             <td>
                                 <a href="{{route('cursos.edit',$curso->id)}}" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Editar</a>
+                                <a href="{{route('cursos.show',$curso->id)}}" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Ver</a>
                                 <a class="delete btn-sm" href="{{route('cursos.index')}}"><i class="fa fa-close"></i> Eliminar</a>
                                 
                             </td>

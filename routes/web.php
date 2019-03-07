@@ -30,3 +30,5 @@ Route::group(['prefix'=>'cursos/{id}'], function () {
     Route::resource('asistencias', 'DiaAsistenciasController');
 });
 Route::resource('cursos', 'CursosController');
+
+Route::resource('horarios', 'HorariosController')->except(['edit']);

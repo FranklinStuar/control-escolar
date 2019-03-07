@@ -60,10 +60,10 @@
             </a>
             <ul>
                 <li>
-                    <a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
+                    <a href="{{route('horarios.index')}}" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
                 </li>
                 <li>
-                    <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
+                    <a href="{{route('horarios.create')}}" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
                 </li>
                 
             </ul>

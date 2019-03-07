@@ -14,6 +14,7 @@ class Horario extends Model
     
     public function materias()
     {
-        return $this->hasMany('App\Models\Materia');
+        return $this->belongsToMany('App\Models\Materia');
     }
+    
 }

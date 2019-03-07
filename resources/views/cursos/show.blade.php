@@ -7,7 +7,7 @@
 @section('content')
     <div class="widget-box">
         <div class="wc-title">
-            <h4><span>Detalles</h4>
+            <h4>Detalles</h4>
         </div>
         <div class="widget-inner">
             <div class="row">

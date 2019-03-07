@@ -15,7 +15,7 @@ class CreateHorariosTable extends Migration
     {
         Schema::create('horarios', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->enum('dia',['lunes','martes','miercoles','jueves','viernes','sabado','domingo']);
+            $table->enum('dia',['lunes','martes','miercoles','jueves','viernes','sabado','domingo',]);
             $table->string('inicio',5); // hh:mm
             $table->string('fin',5);
             $table->timestamps();
