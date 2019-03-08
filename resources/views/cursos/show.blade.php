@@ -29,7 +29,7 @@
                     <h5>Docentes</h5>
                     <ul>
                         @foreach ($curso->docentes() as $docente)
-                            <li>{{$docente->codigo}}: {{$docente->persona->nombre}} {{$docente->persona->apellido}}</li>
+                            <li>{{$docente->codigo}}: {{$docente->persona->nombres}} {{$docente->persona->apellidos}}</li>
                         @endforeach
                     </ul>
                 </div>

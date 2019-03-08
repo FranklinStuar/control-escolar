@@ -28,7 +28,7 @@ class AddPeriodoToCursosTable extends Migration
     public function down()
     {
         Schema::table('cursos', function (Blueprint $table) {
-            $table->dropForeign(['perdiodo_id']);
+            $table->dropForeign(['periodo_id']);
             //
         });
     }

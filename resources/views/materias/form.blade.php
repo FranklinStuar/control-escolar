@@ -11,25 +11,31 @@
                         <tr class="list-item">
                             <td>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-12">
                                         <label class="col-form-label">Código</label>
                                         <div>
-                                            <input name="codigo" class="form-control" type="text" value="{{$curso->codigo}}" required>
+                                            <input name="codigo" class="form-control" type="text" value="{{$materia->codigo}}" required>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-12">
                                         <label class="col-form-label">Nombre</label>
                                         <div>
-                                            <input name="nombre" class="form-control" type="text" value="{{$curso->nombre}}" required>
+                                            <input name="nombre" class="form-control" type="text" value="{{$materia->nombre}}" required>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <label class="col-form-label">Periodo</label>
+                                    <div class="col-md-12">
+                                        <label class="col-form-label">Créditos</label>
                                         <div>
-                                            <select name="periodo_id" id="periodo_id" required>
-                                                @foreach ($periodos as $periodo)
-                                                    <option value="{{$periodo->id}}"  @if ($periodo->id == $curso->periodo_id) selected @endif>
-                                                        {{$periodo->nombre}}
+                                            <input name="creditos" class="form-control" type="number" min="0" max="1000" value="{{$materia->creditos}}" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="col-form-label">Curso</label>
+                                        <div>
+                                            <select name="curso_id" id="curso_id" required>
+                                                @foreach ($cursos as $curso)
+                                                    <option value="{{$curso->id}}"  @if ($curso->id == $materia->curso_id) selected @endif>
+                                                        {{$curso->nombre}}
                                                     </option>
                                                 @endforeach
                                             </select>
@@ -43,7 +49,7 @@
                     <hr>
                 </div>
                 <div class="col-12">
-                    <a class="delete" href="{{route('cursos.index')}}"><i class="fa fa-close"></i> Cancelar</a>
+                    <a class="delete" href="{{route('materias.index')}}"><i class="fa fa-close"></i> Cancelar</a>
                     <button type="submit" class="btn">Guardar</button>
                 </div>
             </div>

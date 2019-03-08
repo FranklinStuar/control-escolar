@@ -18,12 +18,12 @@ class Materia extends Model
         return $this->belongsTo('App\Models\Curso');
     }
     
-    public function horario()
+    public function horarios()
     {
-        return $this->belongsTo('App\Models\Horario');
+        return $this->belongsToMany('App\Models\Horario');
     }
     
-    public function grupoMotas()
+    public function grupoNotas()
     {
         return $this->hasMany('App\Models\GrupoNota');
     }

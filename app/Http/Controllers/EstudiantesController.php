@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Esudiante;
+use App\Models\Curso;
 
 class EstudiantesController extends Controller
 {
@@ -13,7 +15,9 @@ class EstudiantesController extends Controller
      */
     public function index()
     {
-        //
+        $estudiantes = Estudiante::all();
+        return view('estudiantes.index')
+        ->with('estudiantes',$estudiantes);
     }
 
     /**
@@ -23,9 +27,11 @@ class EstudiantesController extends Controller
      */
     public function create()
     {
-        //
+        $estudiante = new Estudiante;
+        $estudiante->persona = new Persona;
+        return view('estudiantes.create')
+        ->with('estudiante',$estudiante);
     }
-
     /**
      * Store a newly created resource in storage.
      *

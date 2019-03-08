@@ -8,7 +8,7 @@ class Nota extends Model
 {
     protected $fillable = [
         'nota',
-        'observación',
+        'observacion',
         'grupo_nota_id',
         'estudiante_id',
     ];
@@ -21,6 +21,12 @@ class Nota extends Model
     public function grupoNota()
     {
         return $this->belongsTo('App\Models\GrupoNota');
+    }
+    
+    public function notaReal()
+    {
+        $nota = $this->nota * $this->grupoNota->nota_equivalente / $this->grupoNota->limite;
+        return round($nota,2);
     }
     
 }

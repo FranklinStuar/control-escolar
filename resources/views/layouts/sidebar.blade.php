@@ -26,10 +26,10 @@
             </a>
             <ul>
                 <li>
-                    <a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
+                    <a href="{{route('materias.index')}}"class="ttr-material-button"><span class="ttr-label">Todos</span></a>
                 </li>
                 <li>
-                    <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
+                    <a href="{{route('materias.create')}}"class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
                 </li>
                 
             </ul>
@@ -77,10 +77,10 @@
             </a>
             <ul>
                 <li>
-                    <a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
+                    <a href="{{route('docentes.index')}}"class="ttr-material-button"><span class="ttr-label">Todos</span></a>
                 </li>
                 <li>
-                    <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
+                    <a href="{{route('docentes.create')}}"class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
                 </li>
                 
             </ul>

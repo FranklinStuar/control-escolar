@@ -78,6 +78,8 @@
 					<li>@yield('title','IEP')</li>
 				</ul>
 			</div>	
+			@include('layouts.messages')
+			
 			@yield('content')
 		</div>
 	</main>

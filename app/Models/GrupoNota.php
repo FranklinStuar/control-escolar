@@ -8,6 +8,7 @@ class GrupoNota extends Model
 {
     protected $fillable = [
         'nombre',
+        'observacion',
         'nota_limite',
         'nota_equivalente',
         'fecha',
@@ -23,4 +24,5 @@ class GrupoNota extends Model
     {
         return $this->hasMany('App\Models\Nota');
     }
+
 }
