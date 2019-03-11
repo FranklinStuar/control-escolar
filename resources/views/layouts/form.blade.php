@@ -56,7 +56,16 @@
 			<a href="{{url('/')}}"><img src="{{url('images/logo-white-2.png')}}" alt=""></a>
 		</div>
 		
-        @yield('content')
+		<div class="account-form-inner">
+			<div class="account-container">
+				<div class="heading-bx left">
+					<h2 class="title-head">@yield('title')</h2>
+				</div>	
+				@yield('content')
+				@include('layouts.messages')
+			</div>
+		</div>
+		
 	</div>
 </div>
 <!-- External JavaScripts -->

@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="widget-box">
+    {{-- <div class="widget-box">
         <div class="wc-title">
             <a href="{{route('grupo-notas.create',$materia->id)}}" class="btn-secondry add-item m-r5"><i class="fa fa-fw fa-plus-circle"></i>Agregar Registro de notas</a>
         </div>
@@ -88,5 +88,5 @@
                 </tbody>
             </table>
         </div>
-    </div>
+    </div> --}}
 @endsection

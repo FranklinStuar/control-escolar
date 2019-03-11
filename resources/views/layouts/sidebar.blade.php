@@ -94,22 +94,22 @@
             </a>
             <ul>
                 <li>
-                    <a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
+                    <a href="{{route('estudiantes.index')}}" class="ttr-material-button"><span class="ttr-label">Todos</span></a>
                 </li>
                 <li>
-                    <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
+                    <a href="{{route('estudiantes.create')}}" class="ttr-material-button"><span class="ttr-label">Nuevo</span></a>
                 </li>
                 
             </ul>
         </li>
         
 
-        <li>
+        {{-- <li>
             <a href="bookmark.html" class="ttr-material-button">
                 <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
                 <span class="ttr-label">Perfil</span>
             </a>
-        </li>
+        </li> --}}
 
         <li class="ttr-seperate"></li>
     </ul>

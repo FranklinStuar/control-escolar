@@ -95,6 +95,12 @@ class CursosController extends Controller
         $curso = Curso::find($id);
         $nombre = $curso->nombre;
         $curso->delete();
-        return redirect()->route('cursos.index')->with('success',"Curso $nombre editado correctamente");
+        return redirect()->route('cursos.index')->with('success',"Curso $nombre eliminado correctamente");
+    }
+
+    public function estudiantes($curso_id){
+        $curso = Curso::find($curso_id);
+        return view('cursos-estudiantes.index')
+            ->with('curso',$curso);
     }
 }

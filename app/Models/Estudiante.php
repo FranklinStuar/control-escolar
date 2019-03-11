@@ -10,6 +10,7 @@ class Estudiante extends Model
         'persona_id',
         'representante_id',
         'curso_id',
+        'nacimiento',
     ];
     
     public function persona()

@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home')
+        ->with('estudiantes',\App\Models\Estudiante::all())
+        ->with('cursos',\App\Models\Curso::all())
+        ->with('docentes',\App\Models\Docente::all())
+        ->with('horarios',\App\Models\Horario::all())
+        ->with('materias',\App\Models\Materia::all())
+        ->with('periodos',\App\Models\Periodo::all())
+        ;
     }
 }

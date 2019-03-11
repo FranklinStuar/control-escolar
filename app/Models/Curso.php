@@ -33,7 +33,7 @@ class Curso extends Model
         return $docentes->all();
     }
 
-    public function asistencias()
+    public function diaAsistencias()
     {
         return $this->hasMany('App\Models\DiaAsistencia');
     }

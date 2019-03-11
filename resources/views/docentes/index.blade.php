@@ -10,7 +10,7 @@
             <a href="{{route('docentes.create')}}" class="btn-secondry add-item m-r5"><i class="fa fa-fw fa-plus-circle"></i>Agregar Docente</a>
         </div>
         <div class="widget-inner">
-            <table class="table ">
+            <table class=" ">
                 <thead>
                     <tr>
                         <th>Código</th>

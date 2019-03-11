@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-form input[type='text'], span.form-control, .table tbody, ul li{
+form input[type='text'], span.form-control, table tbody, ul li, .large-list tbody{
     text-transform: uppercase;
 }
 
@@ -18,4 +18,35 @@ form label{
     text-transform: uppercase;
 }
 
+img.foto{
+    max-width: 80px;
+    width: 80px;
+    max-height: 80px;
+    height: 80px;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 1px solid #2e2e2e;
+    display: block;
+}
+.autoscroll{
+    overflow: auto;
+}
 
+table td{
+    font-size: 0.85em;
+}
+
+table.large-list{
+    font-size: 12px;
+}
+table.large-list thead >tr >th{
+    padding-right: 10px;
+    padding-left: 5px;
+    border-right: #2e2e2e 1px solid
+}
+table.large-list tbody td{
+    text-align: center;
+}
+table.large-list tr{
+    border-bottom: 1px solid #2e2e2e;
+}

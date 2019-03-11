@@ -9,8 +9,9 @@ class Asistencia extends Model
     protected $fillable = [
         'tipo',
         'fecha',
-        'curso_id',
+        'dia_asistencia_id',
         'estudiante_id',
+        'observacion',
     ];
     
     public function estudiante()
@@ -18,8 +19,8 @@ class Asistencia extends Model
         return $this->belongsTo('App\Models\Estudiante');
     }
 
-    public function curso()
+    public function diaAsistencia()
     {
-        return $this->belongsTo('App\Models\Curso');
+        return $this->belongsTo('App\Models\DiaAsistencia');
     }
 }

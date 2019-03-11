@@ -11,6 +11,7 @@ class Nota extends Model
         'observacion',
         'grupo_nota_id',
         'estudiante_id',
+        'fecha',
     ];
     
     public function estudiante()

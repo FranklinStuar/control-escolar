@@ -83,7 +83,7 @@ class DocentesController extends Controller
                 'antecedentes_penales' => $antecedentes_penales,
                 'persona_id' => $persona->id,
             ]);
-            $persona->udate([
+            $persona->update([
                 'foto'=>$foto
             ]);
             return redirect()->route('docentes.edit',$docente->id)

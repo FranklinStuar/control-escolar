@@ -18,7 +18,7 @@ class CreateAsistenciasTable extends Migration
             $table->bigIncrements('id');
             $table->enum('tipo',['T','A','Fj','Fi',])->default('Fi'); // T=tardanza, A=asistió, FJ= Falta justificada, Fi= Falta injustificada,
             $table->date('fecha'); 
-            $table->string('observacion'); 
+            $table->string('observacion')->nullable(); 
             $table->unsignedBigInteger('estudiante_id');
             $table->timestamps();
             $table->foreign('estudiante_id')->references('id')->on('estudiantes')->onDelete('cascade');
