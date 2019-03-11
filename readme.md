@@ -16,8 +16,14 @@ Hay una diagrama de clases en UML con la cual basarse para continuar con el sist
 
 El sistema está a medias para que lo continúen a su gusto
 
-###Plantilla 
+### Plantilla 
 
 Se utiliza la plantilla: 
 
 - EduChamp-Education-HTML-Template-Admin-Dashboard
+
+### Tecnología
+
+- Basado en Laravel 5.8
+- No utiliza ajax
+- Plantilla ya mencionada
